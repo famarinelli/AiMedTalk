@@ -17,7 +17,7 @@ The goal is to produce data that not only reflects clinical discussions but also
 -   **Long Conversation Handling**: Overcomes the token limits of standard models through a "chunking" logic that breaks down the generation into multiple API calls while maintaining dialogue coherence.
 -   **Structured Formatting**: The output is clean and easy to parse, with clear speaker distinction (`>dr:`, `>pz:`) and exchange numbering.
 -   **API Rate Limiting**: Includes a built-in rate limiter to avoid exceeding API request quotas.
--   **Highly Configurable**: Key parameters (number of conversations, length, model names, etc.) are easily adjustable at the top of the script.
+-   **Flexible Configuration**: All key parameters (number of conversations, length, model, etc.) are configurable via command-line arguments.
 
 ## Installation
 
@@ -36,11 +36,6 @@ To run this script, you need Python 3.7+ installed.
     ```
 
 3.  **Install dependencies:**
-    Create a `requirements.txt` file with the following content:
-    ```
-    google-genai
-    ```
-    Then, run:
     ```bash
     pip install -r requirements.txt
     ```
@@ -57,7 +52,6 @@ To run this script, you need Python 3.7+ installed.
         ```
         GEMINI_API_KEY="YOUR_API_KEY_HERE"
         ```
-    3.  **Important**: Add the `.env` file to your `.gitignore` file to ensure it's never tracked by Git.
 
     **Method 2 (Alternative): Using an Environment Variable**
 
@@ -75,25 +69,56 @@ To run this script, you need Python 3.7+ installed.
 
 ## Usage
 
-1.  **Configure Parameters**: Open the `conversation_generator.py` file and modify the parameters in the `CONFIGURATION PARAMETERS` section to fit your needs (e.g., `NUM_CONVERSATIONS_TO_GENERATE`, `MAX_EXCHANGES_PER_CONVERSATION`).
+The script is executed from the command line, and all parameters can be customized using flags. If a flag is not provided, its default value will be used.
 
-2.  **Run the Script**:
-    ```bash
-    python conversation_generator.py
-    ```
+**1. See All Available Options**
 
-3.  **Check the Output**: The script will create a directory named `generated_conversations` (or your specified name) and save each complete dialogue in a separate `.txt` file.
+To get a full list of all configurable parameters, their descriptions, and default values, run:
+```bash
+python conversation_generator.py --help
+```
 
-    The output will follow this format:
-    ```
-    #1
-    >dr: Good morning, how have you been feeling this week?
-    >pz: Quite tired, doctor. It's been a tough week.
-    #2
-    >dr: I'm sorry to hear that. Let's go over your latest test results.
-    >pz: Of course, I hope there's good news.
-    ...
-    ```
+**2. Run the Script**
+
+**Basic Usage**
+
+Running the script without any arguments will generate one conversation using the default settings (English, 5 exchanges, etc.).
+```bash
+python conversation_generator.py
+```
+
+**Advanced Usage Example**
+
+You can combine multiple flags to customize the generation. Here is an example that generates **5 longer conversations (30 exchanges each) in Italian**, saving them to a custom directory named `italian_dialogues`:
+```bash
+python conversation_generator.py \
+  -n 5 \
+  -l it \
+  --max-exchanges 30 \
+  --exchanges-per-call 15 \
+  -o ./italian_dialogues
+```
+
+**3. Check the Output**
+
+The script will create a directory named `generated_conversations` (or the custom name you provide) and save each complete dialogue in a separate `.txt` file.
+
+The output inside each file will follow this format:
+```
+#1
+>dr: Good morning, how have you been feeling this week?
+>pz: Quite tired, doctor. It's been a tough week.
+#2
+>dr: I'm sorry to hear that. Let's go over your latest test results.
+>pz: Of course, I hope there's good news.
+...
+```
+## Example Outputs
+
+To provide a clear example of the final output, this repository includes two pre-generated conversations located in the `generated_conversations` directory:
+
+-   [`conversation_leukemia_en_1.txt`](./generated_conversations/conversation_leukemia_en_1.txt): A full sample conversation generated in English.
+-   [`conversation_leukemia_it_1.txt`](./generated_conversations/conversation_leukemia_it_1.txt): A full sample conversation generated in Italian.
 
 ## How It Works
 

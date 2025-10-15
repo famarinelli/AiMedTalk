@@ -1,0 +1,25 @@
+#1
+>dr: Buongiorno Signor Rossi, si accomodi pure. Come sta oggi? Vedo che ha con sé i risultati degli ultimi esami.
+>pz: Buongiorno dottore. Beh, diciamo che oggi è una giornata un po' così... I risultati li ho qui, ma sinceramente non so nemmeno se ho voglia di guardarli.
+
+#2
+>dr: Capisco, Signor Rossi. È assolutamente normale sentirsi in questo modo. Prima di addentrarci nei risultati, mi dica, come si sente fisicamente e emotivamente in questi giorni? Ha notato cambiamenti rispetto all'ultima volta che ci siamo visti? Cerchi di descrivermi la sua giornata tipo, se le va.
+>pz: Fisicamente sono sempre stanco, dottore, una stanchezza che non mi abbandona mai, anche dopo aver dormito. A volte mi vengono delle fitte alle ossa, soprattutto alle gambe. Emotivamente... beh, è un continuo tira e molla. Ci sono giorni in cui mi sento quasi normale, e altri in cui sono sopraffatto dall'ansia e dalla paura che la malattia torni a farsi sentire. La mia giornata tipo? Principalmente la passo a letto o sul divano, guardando la televisione. Non ho più la forza di fare le cose che mi piacevano.
+
+#3
+>dr: La ringrazio per la sua onestà, Signor Rossi. È importante che lei si senta libero di esprimere quello che prova. La stanchezza che descrive, il dolore alle ossa, sono sintomi che dobbiamo tenere sotto controllo. Li valuteremo meglio con gli esami e con il questionario ESAS che le ho fatto compilare la scorsa volta. Mi sembra di capire che anche l'umore è altalenante. Potremmo rivedere insieme il questionario HADS che avevamo fatto per monitorare ansia e depressione. Le sembra una buona idea?
+>pz: Sì, dottore, mi sembra giusto. A volte mi sembra di impazzire, chiuso in casa e con la testa piena di pensieri negativi.
+
+#4
+>dr: Bene. Allora, partiamo dall'ESAS. Vedo qui che la stanchezza (fatigue) è ancora a livello 7 su 10, e il dolore a 4 su 10.  Avevamo provato ad aumentare un po' la dose di antidolorifico blando, ma sembra non aver sortito l'effetto desiderato. Per la stanchezza, invece, sta seguendo i consigli che le avevo dato sull'alimentazione e l'idratazione?
+>pz: Cerco di farlo, dottore, ma a volte non ho proprio appetito e mi sforzo a mangiare. Bere, bevo, quello sì. Forse dovrei provare a fare un po' di esercizio fisico leggero, come mi aveva suggerito, ma la sola idea mi sfianca.
+
+#5
+>dr: Capisco perfettamente. Non si forzi, deve ascoltare il suo corpo. Iniziamo con piccoli passi. Potremmo provare ad aggiungere degli integratori vitaminici per aiutarla con la stanchezza e valutare se cambiare antidolorifico per il dolore. Riguardo all'HADS, il punteggio dell'ansia è salito leggermente rispetto all'ultima volta. Questo è comprensibile, date le sue preoccupazioni. Oltre a monitorarlo, vorrei che parlassimo di come la leucemia ha impattato sulla sua vita in generale. Mi riferisco al lavoro, alla famiglia, agli amici... e a come lei sta affrontando questa situazione. Potremmo utilizzare il questionario FACT-Leu per avere un quadro più completo e magari fare un accenno al COPE per le strategie di coping che sta mettendo in atto. Che ne dice?
+>pz: Dico che è tutto un peso, dottore. Il lavoro l'ho perso, la famiglia mi vuole bene ma non capisce fino in fondo cosa provo, e gli amici... beh, un po' alla volta si sono fatti sentire sempre meno. E io mi sento solo e inutile.
+
+#5
+>dr: La ringrazio per aver condiviso questo con me, Signor Rossi. So che non è facile. Affrontiamo un passo alla volta. Le prescrivo gli integratori e le cambio l'antidolorifico. Li provi per una settimana e poi mi faccia sapere come si sente. Cerchi di fare anche solo qualche piccolo esercizio di respirazione profonda durante la giornata, può aiutare con l'ansia. La prossima volta, dedicheremo più tempo a parlare di come la malattia ha influito sulla sua vita e valuteremo insieme i questionari che le ho menzionato. Nel frattempo, si ricordi che non è solo e che siamo qui per aiutarla.
+>pz: Grazie, dottore. Apprezzo molto la sua disponibilità e la sua comprensione. Mi sento un po' meglio dopo aver parlato con lei.
+>dr: Ottimo, Signor Rossi. È quello il mio obiettivo. Ci vediamo tra un paio di settimane, allora. Mi raccomando, mi tenga aggiornato se dovesse avere bisogno di qualcosa prima. Buona giornata.
+>pz: Arrivederci, dottore. Buona giornata anche a lei.
