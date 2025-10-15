@@ -46,7 +46,22 @@ To run this script, you need Python 3.7+ installed.
     ```
 
 4.  **Set up your API key:**
-    The script requires a Google Gemini API key. Set it as an environment variable.
+    You need to provide your Google Gemini API key. There are two ways to do this:
+
+    **Method 1 (Recommended): Using a `.env` file**
+
+    This is the safest method as it prevents you from accidentally committing your API key to version control.
+
+    1.  Create a file named `.env` in the root directory of the project.
+    2.  Add the following line to the file, replacing `YOUR_API_KEY_HERE` with your actual key:
+        ```
+        GEMINI_API_KEY="YOUR_API_KEY_HERE"
+        ```
+    3.  **Important**: Add the `.env` file to your `.gitignore` file to ensure it's never tracked by Git.
+
+    **Method 2 (Alternative): Using an Environment Variable**
+
+    You can set the API key directly in your terminal session. This method overrides the `.env` file if both are present.
 
     *   On macOS/Linux:
         ```bash
@@ -55,6 +70,7 @@ To run this script, you need Python 3.7+ installed.
     *   On Windows (Command Prompt):
         ```bash
         set GEMINI_API_KEY="YOUR_API_KEY_HERE"
+        ```
         ```
 
 ## Usage
