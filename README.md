@@ -71,7 +71,7 @@ To run this script, you need Python 3.7+ installed.
         ```bash
         set GEMINI_API_KEY="YOUR_API_KEY_HERE"
         ```
-        ```
+
 
 ## Usage
 
