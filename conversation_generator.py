@@ -23,7 +23,7 @@ parser.add_argument("-l", "--language", type=str, default="en", choices=['en', '
 # Model and Generation Settings
 parser.add_argument("-m", "--model", type=str, default="gemini-2.5-flash", 
                     help="Name of the Gemini model to use.")
-parser.add_argument("--max-tokens", type=int, default=8000, 
+parser.add_argument("--max-tokens", type=int, default=10000, 
                     help="Maximum number of tokens to generate per API request.")
 
 # Conversation Logic Settings
